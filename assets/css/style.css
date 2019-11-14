@@ -6,27 +6,32 @@
   .bgimg-1 {
     background-image: url("../img/bg-1-main.jpeg");
     background-position: center top;
+    background-repeat: no-repeat;
     min-height: 600px;
   }
 
   .bgimg-2 {
     background-image: url("../img/bg-2-main.jpeg");
     background-position: center top;
+    background-repeat: no-repeat;
     min-height: 600px;
   }
   .bgimg-3 {
     background-image: url("../img/bg-3-main.jpeg");
     background-position: center top;
+    background-repeat: no-repeat;
     min-height: 600px;
   }
   .bgimg-4 {
     background-image: url("../img/bg-4-main.jpeg");
     background-position: center top;
+    background-repeat: no-repeat;
     min-height: 600px;
   }
   .bgimg-5 {
     background-image: url("../img/bg-5-main.jpeg");
     background-position: center top;
+    background-repeat: no-repeat;
     min-height: 600px;
   }
 
@@ -221,7 +226,7 @@ a:after {
   width:100%;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+/* .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -229,7 +234,7 @@ a:after {
   background-repeat: no-repeat;
   background-size: cover;
 
-}
+} */
 
 .white{
   color:#777;
