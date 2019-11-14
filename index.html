@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free coming soon template with jQuery countdown">
+
+  <title>Gurdas Weds Mansha</title>
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+  <!-- siimple style -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="container">
+      <div class="bgimg-1 row" id="home">
+        <div class="caption alignright">
+          <span class="border page-title">Gurdas Weds Mansha</span>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="border page-title">
+            Our Forever Begins in<br>
+            <div id="countdown"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row bgimg-2">
+      </div>
+
+      <div class="row content-div black" style="position:relative;" id="wedding">
+        <br />
+        <div class="row">
+          <div class="col-md-12 title" style="text-align:center;">Wedding </div>
+        </div>
+
+        <br />
+        <div class="row ">
+          <div class="col-md-6" style="text-align:center;">
+            <div class="content">
+              <b>Date</b> : 24<sup>th</sup> November 2019 <br>
+              <b>Baraat</b> : 11:15 AM<br>
+              <b>Aanand Karaj</b> : 11:40 AM<br>
+              <b>Venue</b> : <b>Dhan Potohar Gurudwara</b> , <br>Santacruz West ,<br> Mumbai 400053
+            </div>
+          </div>
+          <div class="col-md-6" style="text-align:center;">
+            <div class="content">
+              Location - <a href="https://goo.gl/maps/9e73DqHXbdQC4J9A7" target="_blank"> Open In Maps</a>
+              <div class="mapContent" id="weddingMap"></div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+
+      <div class="row bgimg-3">
+      </div>
+
+      <div class="row content-div black">
+        With Love and Blessings of our families, we embark on this journey together.
+        <br>
+        We wish your presence to make this day special for us.
+
+      </div>
+
+
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiktyNeMXx6mrkq6ItXpKEq7OyMOHZMso&callback=initMap">
+    </script>
+  <script type="text/javascript">
+    function initMap() {
+      var weddingLoc = { lat: 19.0799959, lng: 72.8306183 };
+      var weddingmap = new google.maps.Map(
+        document.getElementById('weddingMap'), { zoom: 15, center: weddingLoc });
+      var weddingmarker = new google.maps.Marker({ position: weddingLoc, map: weddingmap });
+    }
+    $("body").hover(function () {
+      var media = document.getElementById("BgAudio");
+      const playPromise = media.play();
+      if (playPromise !== null) {
+        playPromise.catch(() => { media.play(); })
+      }
+    });
+    $('#countdown').countdown('2019/11/24 11:30:00', function (event) {
+      $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
+    });
+  </script>
+
+
+</body>
+
+</html>
