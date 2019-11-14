@@ -47,27 +47,31 @@
     background-image: url("../img/bg-1-small.jpeg");
     background-position: center top;
     min-height: 600px;
+    background-size: auto;
   }
   .bgimg-2 {
     background-image: url("../img/bg-2-small.jpeg");
     min-height: 600px;
     background-position: center top;
-    background-size: 400px 200px;
+    background-size: auto;
   }
   .bgimg-3 {
     background-image: url("../img/bg-3-small.jpeg");
     background-position: center top;
     min-height: 600px;
+    background-size: auto;
   }
   .bgimg-4 {
     background-image: url("../img/bg-4-small.jpeg");
     background-position: center top;
     min-height: 600px;
+    background-size: auto;
   }
   .bgimg-5 {
     background-image: url("../img/bg-5-small.jpeg");
     background-position: center top;
     min-height: 600px;
+    background-size: auto;
   }
   
   .page-title{
